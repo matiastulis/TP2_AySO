@@ -3,7 +3,7 @@ lsblk
 sudo fdisk /dev/sdb
 sudo fdisk /dev/sdc
 sudo fdisk /dev/sdd
-lsblk
+lsblk 
 sudo pvcreate /dev/sdb1 /dev/sdc1 /dev/sdd1
 sudo apt install lvm2
 sudo pvcreate /dev/sdb1 /dev/sdc1 /dev/sdd1
