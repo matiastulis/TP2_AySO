@@ -1,6 +1,4 @@
 sudo apt update && sudo apt upgrade
-sudo root
-lsbl
 lsblk
 sudo fdisk /dev/sdb
 sudo fdisk /dev/sdc
@@ -21,7 +19,6 @@ sudo lvextend -L 2G /dev/datos/www
 sudo lvextend -l +253 /dev/datos/www
 sudo lvs
 history > history.txt
-ls -al ~/.ssh
 “ssh-keygen”
 ssh-keygen
 cat $HOME/.ssh/*.pub
