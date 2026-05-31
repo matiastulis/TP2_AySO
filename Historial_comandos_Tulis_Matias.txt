@@ -1,0 +1,58 @@
+sudo apt update && sudo apt upgrade
+sudo root
+lsbl
+lsblk
+sudo fdisk /dev/sdb
+sudo fdisk /dev/sdc
+sudo fdisk /dev/sdd
+lsblk
+sudo pvcreate /dev/sdb1 /dev/sdc1 /dev/sdd1
+sudo apt install lvm2
+sudo pvcreate /dev/sdb1 /dev/sdc1 /dev/sdd1
+sudo vgcreate datos /dev/sdb1 /dev/sdc1 /dev/sdd1
+sudo lvcreate -L 1G -n www datos
+sudo lvcreate -L 4G -n salvas datos
+sudo vgdisplay datos
+sudo lvs
+sudo vgs
+sudo pvs
+sudo lvextend -L +1G /dev/datos/www
+sudo lvextend -L 2G /dev/datos/www
+sudo lvextend -l +253 /dev/datos/www
+sudo lvs
+history > history.txt
+ls -al ~/.ssh
+“ssh-keygen”
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit/
+git clone git@github.com:matiastulis/TP2_AySO.git
+sudo apt install git
+git clone git@github.com:matiastulis/TP2_AySO.git
+git clone https://github.com/matiastulis/TP2_AySO.git
+cd TP2_AySO/
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+history -a
+cp ~/.bash_history ./Historial_comandos_Tulis_Matias.txt
+git add Historial_comandos_Tulis_Matias.txt
+git commit -m "ADD: Historial de comandos TP2"
+git push -u origin main
+git init
+cd
+git init
+git add history.txt
+git commit -m "Entrega TP LVM - Historial de comandos completo"
+git branch -M main
+git remote add origin git@github.com:matiastulis/TP2_AySO.git
+git push -u origin main
+cd ~/repogit/TP2_AySO
+git remote set-url origin https://github.com/matiastulis/TP2_AySO.git
+git config user.email "matias.tulis@gmail.com"
+git config user.name "Matias Tulis"
+history -a
